@@ -5,7 +5,7 @@ services:
         container_name: backend_nodejs
         build: ./nodejs
         ports:
-            - "8888:8888"
+            - "5000:5000"
         networks:
             - dev-network
 

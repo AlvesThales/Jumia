@@ -1,7 +1,4 @@
 
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 U
 %.mvn/wrapper/maven-wrapper.properties,3/2/32e074f71d16c1e88ac02aa83592ca6ad1fd98a8
 4
@@ -73,9 +70,11 @@ Osrc/test/java/com/jumia/jpay/customers/service/core/domain/mocks/PhoneMock.java
 y
 Isrc/test/java/com/jumia/jpay/customers/service/core/domain/PhoneTest.java,2/1/21c8e8a8ccbe4b6f6638955cf0b13e75195a124a
 7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+HELP.md,1/a/1a273f73b7a477b0745593641bd708a6182c7ad5
 ”
 dsrc/main/java/com/jumia/jpay/customers/service/adapter/inbound/http/rest/CustomerControllerImpl.java,c/9/c9ed2018e8b4808cc2e2f39fed77b7fc17482284
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 :
 
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
