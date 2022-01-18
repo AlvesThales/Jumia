@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    backend:
+        container_name: backend_nodejs
+        build: ./nodejs
+        ports:
+            - "8888:8888"
+        networks:
+            - dev-network
+
+
+networks:
+    dev-network:
