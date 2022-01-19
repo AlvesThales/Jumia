@@ -12,5 +12,5 @@ The docker-compose file will do all the job and start the application at the url
 
 To stop the application just execute the following command:
 ```shell
-docker-compose up -d --build
+docker-compose stop
 ```
