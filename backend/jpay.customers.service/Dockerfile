@@ -1,10 +1,4 @@
-FROM openjdk:11
-
+FROM maven:3.8.4-jdk-11-slim
 WORKDIR /usr/src/app
-
 COPY . /usr/src/app
-RUN mvn package
-
-ENV PORT 5000
-EXPOSE $PORT
-CMD [ "sh", "-c", "mvn -Dserver.port=${PORT} spring-boot:run" ]
+RUN mvn clean package
