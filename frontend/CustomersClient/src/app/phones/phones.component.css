@@ -1,0 +1,13 @@
+.title {
+  margin: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form-group{
+  display: inline-block;
+}
+
+select, button {
+  margin: 10px;
+}

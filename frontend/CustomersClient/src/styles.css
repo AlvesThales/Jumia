@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+
+}
+
+app-phones {
+  font-weight: bold !important;
+  display: block;
+  margin: 50px 200px;
+}
+
+.btn {
+  background-color: #f66724 !important;
+  color: #fff;
+  border-color: #f66724 !important;
+  font-weight: bold !important;
+}

@@ -1,0 +1,51 @@
+<div class="title">
+  <h2>Customers' phones</h2>
+</div>
+
+<div class="form-group">
+
+  <select [(ngModel)]="selectedCountry">
+    <option value="all" disabled selected>Select Country</option>
+    <option value="all">All</option>
+    <option value="cameroon">Cameroon</option>
+    <option value="ethiopia">Ethiopia</option>
+    <option value="morocco">Morocco</option>
+    <option value="mozambique">Mozambique</option>
+    <option value="uganda">Uganda</option>
+  </select>
+
+  <select [(ngModel)]="selectedState">
+    <option value="all" disabled selected>Select State</option>
+    <option value="all">All</option>
+    <option value="true">Valid</option>
+    <option value="false">Invalid</option>
+  </select>
+
+  <button (click)="getPhones(selectedCountry, selectedState)" class="btn btn-primary ">
+    Get phones
+  </button>
+</div>
+
+<div class="table-container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Phone Number</th>
+      <th>Country Name</th>
+      <th>Country Code</th>
+      <th>State</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let phone of filteredPhones">
+      <td>{{phone.number}}</td>
+      <td>{{phone.country.name}}</td>
+      <td>{{phone.country.code}}</td>
+      <td *ngIf="phone.valid; else elseBlock">Valid</td>
+      <ng-template #elseBlock>
+        <td>Invalid</td>
+      </ng-template>
+    </tr>
+    </tbody>
+  </table>
+</div>
